@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="2px" viewBox="0 0 14 2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/16px/Plus Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1.77777778,8.75555556 C1.34822297,8.75555556 1,8.40733258 1,7.97777778 C1,7.54822297 1.34822297,7.2 1.77777778,7.2 L14.2222222,7.2 C14.651777,7.2 15,7.54822297 15,7.97777778 C15,8.40733258 14.651777,8.75555556 14.2222222,8.75555556 L1.77777778,8.75555556 Z" id="path-1"></path>
+    </defs>
+    <g id="2.-Search-✅" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Search-Results" transform="translate(-385.000000, -260.000000)">
+            <g id="Filters" transform="translate(165.000000, 228.000000)">
+                <g id="TItle" transform="translate(0.000000, 20.000000)">
+                    <g id="Icons/16px/Plus-Copy-2" transform="translate(219.000000, 5.000000)">
+                        <g id="Icons/16px/Minus">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Minus" fill-opacity="0" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                            <g id="🎨Atoms/Colour/Dark-Grey/100%" mask="url(#mask-2)" fill="#7F8FA4" fill-rule="evenodd">
+                                <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

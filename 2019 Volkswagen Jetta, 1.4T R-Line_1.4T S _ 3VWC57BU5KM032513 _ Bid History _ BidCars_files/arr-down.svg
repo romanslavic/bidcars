@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="6px" viewBox="0 0 9 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Other/Arrow Down 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4.5,6.11105904 L7.73813768,2.25613138 C7.99998818,1.94440444 8.45485627,1.91281637 8.75411399,2.18557744 C9.05337171,2.45833851 9.08369625,2.93215966 8.82184575,3.2438866 L5.04185403,7.74387889 C4.75499853,8.0853737 4.24500147,8.0853737 3.95814597,7.74387889 L0.178154255,3.2438866 C-0.0836962493,2.93215966 -0.0533717101,2.45833851 0.245886009,2.18557744 C0.545143727,1.91281637 1.00001182,1.94440444 1.26186232,2.25613138 L4.5,6.11105904 Z" id="path-1"></path>
+    </defs>
+    <g id="1.-Home-✅" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-1201.000000, -1935.000000)">
+            <g id="Footer-Hidden" transform="translate(0.000000, 1912.000000)">
+                <g id="Bottom-Details" transform="translate(30.000000, 0.000000)">
+                    <g id="Right-Side" transform="translate(1073.000000, 14.000000)">
+                        <g id="Expand-/-Collapse">
+                            <g id="Icon/Other/Arrow-Down-2" transform="translate(98.000000, 7.000000)">
+                                <g id="Icons/Other/Arrow-Down">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <use id="Arrow-Down" fill-opacity="0" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                    <g id="🎨Atoms/Colour/Dark-Grey/100%" mask="url(#mask-2)" fill="#7F8FA4" fill-rule="evenodd">
+                                        <rect id="Rectangle" x="0" y="0" width="9" height="10"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
