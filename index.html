@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- #Slave3 -->
+    <!-- #Slave2 -->
 <!-- BASE 2 -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, user-scalable=no">
@@ -74,25 +74,6 @@
     }
 </script>
 
-<script type="text/javascript">
-    localStorage.setItem('watchlistAuctionCounter', 3);
-    localStorage.setItem('watchlistAuction', JSON.stringify(["0-44680517","0-44314278","1-46608376"]));
-
-    localStorage.setItem('bidingPowerInteger', 0);
-    localStorage.setItem('availablePowerInteger', 0);
-
-    localStorage.setItem('userBiddingPower', '$0/$0');
-    localStorage.setItem('userName', 'Roman Slavic (379893)');
-
-    localStorage.setItem('availablePowerCounter', '$0');
-    localStorage.setItem('biddingPowerCounter', '$0');
-    localStorage.setItem('bidsActiveCounter', 0);
-    localStorage.setItem('bidsActiveLimitCounter', 0);
-    localStorage.setItem('bidsWonCounter', 0);
-    localStorage.setItem('shippingsCounter', 0);
-    localStorage.setItem('canDeposit', 0);
-    localStorage.setItem('telephoneValid', 2);
-</script>
 
 <link rel="preload" href="https://bid.cars/fonts/S6u9w4BMUTPHh7USSwaPGR_p.woff2" as="font" crossorigin>
 <link rel="preload" href="https://bid.cars/fonts/S6u9w4BMUTPHh7USSwiPGQ.woff2" as="font" crossorigin>
@@ -335,47 +316,9 @@ Check if needed-->
 				</div>
 			</div>
 		</div>
-									<div class="buttons_right" id="logged-buttons">
-					<ul>
-						<li>
-							<a href="https://bid.cars/en/user/increase-power" preload="yes" class="header_btn user-buttons"><img src="https://bid.cars/img/upd/zap.svg" width="20" height="20" alt="Bidding power"> <span class="bidding_power_text">Bidding power:</span> <span id="user-bidding-power">$0/$0</span></a>
-						</li>
-						<li class="dropdown_user">
-							<script>if(localStorage.getItem('watchlistAuctionTime')){document.write('<a href="https://bid.cars/en/user/watchlist?c=' + localStorage.getItem('watchlistAuctionTime') + '" preload="yes" class="header_btn user-buttons watchlist-link">');}else{document.write('<a href="https://bid.cars/en/user/watchlist" preload="yes" class="header_btn user-buttons watchlist-link">');}</script>
-								<img src="https://bid.cars/img/upd/user.svg" width="20" height="20" alt="Roman Slavic"> <span>Roman Slavic (379893)</span> <img src="https://bid.cars/img/upd/arrow_down.svg" class="arrw" width="11" height="7" alt="Dropdown">
-							</a>
-							<ul class="profile-dropdown">
-								<li>
-									<script>if(localStorage.getItem('watchlistAuctionTime')){document.write('<a href="https://bid.cars/en/user/watchlist?c=' + localStorage.getItem('watchlistAuctionTime') + '" class="watchlist-link">');}else{document.write('<a href="https://bid.cars/en/user/watchlist" class="watchlist-link">');}</script>Watchlist <span id="user-watchlist-counter">(3)</span></a>
-								</li>
-								<li>
-									<a href="https://bid.cars/en/user/watchlist/archived">Watchlist (archiwum)</a>
-								</li>
-								<!--<li class="separated"><a href="https://bid.cars/en/user/increase-power">Increase Bidding Power</a></li><li><a href="https://bid.cars/en/user/deposit">Deposit Refund</a></li>-->
-								<li class="separated">
-									<a href="https://bid.cars/en/user/bids/current" preload="no">Current Bids <span id="user-current-bids-counter">(<script>if(localStorage.getItem('bidsActiveCounter')){document.write(localStorage.getItem('bidsActiveCounter'));}</script>)</span></a>
-								</li>
-								<li>
-									<a href="https://bid.cars/en/user/bids/won" preload="no">Won Bids <span id="user-won-bids-counter">(<script>if(localStorage.getItem('bidsWonCounter')){document.write(localStorage.getItem('bidsWonCounter'));}</script>)</span></a>
-								</li>
-								<li>
-									<a href="https://bid.cars/en/user/bids/lost" preload="no">Lost Bids</a>
-								</li>
-								<li class="separated">
-									<a href="https://bid.cars/en/user/shipping" preload="no">Shipping <span id="user-shipping-counter">(<script>if(localStorage.getItem('shippingsCounter')){document.write(localStorage.getItem('shippingsCounter'));}</script>)</span></a>
-								</li>
-								<li class="separated">
-									<a href="https://bid.cars/en/user/personal-information" preload="no">Personal Information</a>
-								</li>
-								<li>
-									<a href="https://bid.cars/en/user/password" preload="no">Change password</a>
-								</li>
-								<li class="separated">
-									<a class="logout" href="https://bid.cars/en/user/logout" preload="no">Log Out</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
+									<div class="buttons_right" id="not-logged-buttons">
+					<a href="https://bid.cars/en/login" class="header_btn" preload="no"><img src="https://bid.cars/img/upd/log-in.svg" width="20" height="20" alt="Log in"> Log In</a>
+					<a href="https://bid.cars/en/signup" class="header_btn sign_up" preload="no"><img src="https://bid.cars/img/upd/user-plus.svg" width="20" height="20" alt="Sign up"> Sign Up</a>
 				</div>
 							<div class="menu_toggle">
 			<input type="checkbox" id="hamburger">
@@ -668,7 +611,7 @@ Check if needed-->
 								<ul id="ul-user-menu-2" style="padding-bottom: 150px;">
                                     <h3 style="display: none"><img src="https://bid.cars/img/upd/arrow_down.svg" class="arrw_back" width="11" height="7" alt="Back"> <span id="user-button-name-mobile-2"><script>if(localStorage.getItem('userName')){document.write(localStorage.getItem('userName'));}</script></span></h3>
                                     <li>
-                                        <script>if(localStorage.getItem('watchlistAuctionTime')){document.write('<a href="https://bid.cars/en/user/watchlist?c=' + localStorage.getItem('watchlistAuctionTime') + '" class="watchlist-link">');}else{document.write('<a href="https://bid.cars/en/user/watchlist" class="watchlist-link">');}</script>Watchlist (3)</a>
+                                        <script>if(localStorage.getItem('watchlistAuctionTime')){document.write('<a href="https://bid.cars/en/user/watchlist?c=' + localStorage.getItem('watchlistAuctionTime') + '" class="watchlist-link">');}else{document.write('<a href="https://bid.cars/en/user/watchlist" class="watchlist-link">');}</script>Watchlist (0)</a>
                                     </li>
                                     <li>
                                         <a href="https://bid.cars/en/user/watchlist/archived">Watchlist (Archived)</a>
@@ -707,7 +650,7 @@ Check if needed-->
 				</li>
 			</ul>
 		</nav>
-		<ul class="quick_links autorized">
+		<ul class="quick_links ">
 			<li class="child no-mobile">
 				<a href="#">Monday - Friday 10:00-22:00 CET <img src="https://bid.cars/img/upd/arrow_down.svg" class="arrw" width="11" height="7" alt="Dropdown">
 				</a>
@@ -788,16 +731,14 @@ Check if needed-->
 			</li>
 		</ul>
 		<div class="mobile_menu">
-		                            <ul>
-                    <li>
-                        <a href="https://bid.cars/en/user/increase-power" class="header_btn user-buttons"><img src="https://bid.cars/img/upd/zap.svg" width="20" height="20" alt="Bidding power"> <span class="bidding_power_text">Bidding power:</span> <span id="user-bidding-power-2">$0/$0</span></a>
-                    </li>
-                    <li class="dropdown_user">
-                        <a href="https://bid.cars/en/user/watchlist" class="header_btn user-buttons user-menu">
-                            <img src="https://bid.cars/img/upd/user.svg" width="20" height="20" alt="Roman Slavic"> <span id="user-button-name-mobile">Roman Slavic (379893)</span> <!--<img src="https://bid.cars/img/upd/arrow_down.svg" class="arrw rotated" width="11" height="7" alt="Dropdown">-->
-                        </a>
-                    </li>
-                </ul>
+		            				<ul>
+					<li>
+                		<a href="https://bid.cars/en/login" class="header_btn"><img src="https://bid.cars/img/upd/log-in.svg" alt="Log in"> Log In</a>
+					</li>
+					<li>
+                		<a href="https://bid.cars/en/signup" class="header_btn sign_up"><img src="https://bid.cars/img/upd/user-plus.svg" alt="Sign up"> Sign Up</a>
+					</li>
+				</ul>
             				</div>
 	</div> 
 	
@@ -806,11 +747,8 @@ Check if needed-->
 				localStorage.setItem('liveAuctions', 0);
 			</script>
 							<script>
-					document.documentElement.style.setProperty('--bar-height', '36px');
+					document.documentElement.style.setProperty('--bar-height', '0px');
 				</script>
-				<div class="info_bar" style="padding: 7px 10px; background: #f68136 !important; cursor: pointer" onclick="location.href='https://bid.cars/en/user/personal-information'">
-					You account is not fully activated. Click here to resend your activation mail or verify your telephone number.
-				</div>
 					</div>
 	</header>
     	<section id="content" class="item-single-page archieved-lot">
@@ -1388,7 +1326,7 @@ Check if needed-->
 									<span class="indicator red"></span> Auction date
 								</span>
 								<span>Friday, December 15, 2023 <font color="#7f8fa4">
-																			(2 y 4 m 3 d  ago)
+																			(2 y 4 m 5 d  ago)
 																		</font></span>
 							</div>
 						</div>
@@ -1929,31 +1867,6 @@ Check if needed-->
 
 						</div>
 
-                              <div class="box" id="vehicle_reports" style="margin-bottom: 15px">
-                    <div class="box_header">
-                    <h4>Vehicle Reports</h4>
-
-                                                  <div class="right_side">Available <span id="reportsCounter">0</span></div>
-                        
-                                            </div>
-
-                                        <div class="content">
-
-                        <div class="option fox">
-                            <img src="https://bid.cars/img/fox.svg" class="run-svg hasSVG" width="40" height="40" alt="Fox">
-                                                                                          <a href="#" class="gen_report disabled">No credits</a>
-                                                                                  </div>
-                        <div class="option check">
-                            <img src="https://bid.cars/img/check.svg" class="run-svg hasSVG" width="40" height="40" alt="Check">
-                                                                                          <a href="#" class="gen_report disabled">No credits</a>
-                                                                                  </div>
-
-                      </div>
-                                            
-                                        <div class="pad-wr">
-                      <a href="https://autoreport.info" target="_blank" class="get-more-reps" style="width: 100%;"><i class="fa fa-external-link" aria-hidden="true"></i> Get Reports</a>
-                    </div>
-                                    </div>
               
 								<div class="box additional_services_wr" id="additional-services">
 									<div class="header">
@@ -2313,7 +2226,7 @@ Check if needed-->
 								<span id="usdeurrate"></span>, USD/PLN
 								<span id="usdplnrate"></span>, EUR/PLN
 								<span id="eurplnrate"></span><br/>Exchange rates updated:
-								Apr 18, 2026, 10:00 PM<br/>Rates of The National Bank of Poland
+								Apr 20, 2026, 1:00 PM<br/>Rates of The National Bank of Poland
 								<a href="http://www.nbp.pl/">nbp.pl</a>
 							</div>
 
@@ -2394,129 +2307,6 @@ Check if needed-->
                         
 					</div>
                     				                        
-                    					<div class="box item-box in-row" onclick="location.href='https://bid.cars/en/lot/0-37396702/2019-Volkswagen-Jetta-3VWC57BUXKM093100'">
-                        
-                        <div class="top-wr">
-                            <div class="gallery">
-                                <div
-                                    id="carousel-car-6" class="carousel slide carousel-product" data-ride="carousel">
-                                    <!--
-                                                                <ol class="carousel-indicators">
-                                                                  <li data-target="#carousel-car-6" data-slide-to="0" class="active"></li>
-                                                                </ol>
-                                    -->
-
-                                    <div class="carousel-inner" role="img">
-                                        <a href="https://bid.cars/en/lot/0-37396702/2019-Volkswagen-Jetta-3VWC57BUXKM093100" preload="no"><img class="carousel-item active" loading="lazy" src="https://mercury.bid.cars/0-37396702/2019-Volkswagen-Jetta-3VWC57BUXKM093100-1.jpg" alt="3VWC57BUXKM093100"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item-name">
-                                <a href="https://bid.cars/en/lot/0-37396702/2019-Volkswagen-Jetta-3VWC57BUXKM093100" preload="no">2019 Volkswagen Jetta, S/Se/R-Line</a>
-                            </div>
-                        </div>
-                        
-                        <div class="bottom-wr">
-                            <div class="item-vin"><img src="https://bid.cars/img/upd/tabler_barcode.svg" width="20" height="20" alt="VIN code"><h2>
-                                    <a href="https://bid.cars/en/lot/0-37396702/2019-Volkswagen-Jetta-3VWC57BUXKM093100" preload="no">3VWC57BUXKM093100</a>
-                                </h2>
-                            </div>
-
-                            
-                            <div class="item-time auc-type-2">
-                                <img src="https://bid.cars/images/timer.svg" width="20" height="20" alt="Time left"> <span class="indicator"></span> Finished
-                            </div>
-
-                            <div class="price-box final"><div><span>Final bid</span>  
-															$3,425.00
-														</div></div>
-
-                                                    </div>
-                        
-					</div>
-                    				                        
-                    					<div class="box item-box in-row" onclick="location.href='https://bid.cars/en/lot/1-73165453/2018-Volkswagen-Jetta-3VWDB7AJ6JM230102'">
-                        
-                        <div class="top-wr">
-                            <div class="gallery">
-                                <div
-                                    id="carousel-car-6" class="carousel slide carousel-product" data-ride="carousel">
-                                    <!--
-                                                                <ol class="carousel-indicators">
-                                                                  <li data-target="#carousel-car-6" data-slide-to="0" class="active"></li>
-                                                                </ol>
-                                    -->
-
-                                    <div class="carousel-inner" role="img">
-                                        <a href="https://bid.cars/en/lot/1-73165453/2018-Volkswagen-Jetta-3VWDB7AJ6JM230102" preload="no"><img class="carousel-item active" loading="lazy" src="https://mercury.bid.cars/1-73165453/2018-Volkswagen-Jetta-3VWDB7AJ6JM230102-1.jpg" alt="3VWDB7AJ6JM230102"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item-name">
-                                <a href="https://bid.cars/en/lot/1-73165453/2018-Volkswagen-Jetta-3VWDB7AJ6JM230102" preload="no">2018 Volkswagen Jetta, SE</a>
-                            </div>
-                        </div>
-                        
-                        <div class="bottom-wr">
-                            <div class="item-vin"><img src="https://bid.cars/img/upd/tabler_barcode.svg" width="20" height="20" alt="VIN code"><h2>
-                                    <a href="https://bid.cars/en/lot/1-73165453/2018-Volkswagen-Jetta-3VWDB7AJ6JM230102" preload="no">3VWDB7AJ6JM230102</a>
-                                </h2>
-                            </div>
-
-                            
-                            <div class="item-time auc-type-2">
-                                <img src="https://bid.cars/images/timer.svg" width="20" height="20" alt="Time left"> <span class="indicator"></span> Finished
-                            </div>
-
-                            <div class="price-box final"><div><span>Final bid</span>  
-															$3,800.00
-														</div></div>
-
-                                                    </div>
-                        
-					</div>
-                    				                        
-                    					<div class="box item-box in-row" onclick="location.href='https://bid.cars/en/lot/1-53471793/2019-Volkswagen-Jetta-3VWCB7BU7KM202508'">
-                        
-                        <div class="top-wr">
-                            <div class="gallery">
-                                <div
-                                    id="carousel-car-6" class="carousel slide carousel-product" data-ride="carousel">
-                                    <!--
-                                                                <ol class="carousel-indicators">
-                                                                  <li data-target="#carousel-car-6" data-slide-to="0" class="active"></li>
-                                                                </ol>
-                                    -->
-
-                                    <div class="carousel-inner" role="img">
-                                        <a href="https://bid.cars/en/lot/1-53471793/2019-Volkswagen-Jetta-3VWCB7BU7KM202508" preload="no"><img class="carousel-item active" loading="lazy" src="https://mercury.bid.cars/1-53471793/2019-Volkswagen-Jetta-3VWCB7BU7KM202508-1.jpg" alt="3VWCB7BU7KM202508"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item-name">
-                                <a href="https://bid.cars/en/lot/1-53471793/2019-Volkswagen-Jetta-3VWCB7BU7KM202508" preload="no">2019 Volkswagen Jetta, S</a>
-                            </div>
-                        </div>
-                        
-                        <div class="bottom-wr">
-                            <div class="item-vin"><img src="https://bid.cars/img/upd/tabler_barcode.svg" width="20" height="20" alt="VIN code"><h2>
-                                    <a href="https://bid.cars/en/lot/1-53471793/2019-Volkswagen-Jetta-3VWCB7BU7KM202508" preload="no">3VWCB7BU7KM202508</a>
-                                </h2>
-                            </div>
-
-                            
-                            <div class="item-time auc-type-2">
-                                <img src="https://bid.cars/images/timer.svg" width="20" height="20" alt="Time left"> <span class="indicator"></span> Finished
-                            </div>
-
-                            <div class="price-box final"><div><span>Final bid</span>  
-															$4,300.00
-														</div></div>
-
-                                                    </div>
-                        
-					</div>
-                    				                        
                     					<div class="box item-box in-row" onclick="location.href='https://bid.cars/en/lot/1-55336473/2019-Volkswagen-Jetta-3VWC57BU5KM082134'">
                         
                         <div class="top-wr">
@@ -2552,47 +2342,6 @@ Check if needed-->
 
                             <div class="price-box final"><div><span>Final bid</span>  
 															$3,950.00
-														</div></div>
-
-                                                    </div>
-                        
-					</div>
-                    				                        
-                    					<div class="box item-box in-row" onclick="location.href='https://bid.cars/en/lot/0-37730147/2019-Volkswagen-Jetta-3VWCB7BU7KM198346'">
-                        
-                        <div class="top-wr">
-                            <div class="gallery">
-                                <div
-                                    id="carousel-car-6" class="carousel slide carousel-product" data-ride="carousel">
-                                    <!--
-                                                                <ol class="carousel-indicators">
-                                                                  <li data-target="#carousel-car-6" data-slide-to="0" class="active"></li>
-                                                                </ol>
-                                    -->
-
-                                    <div class="carousel-inner" role="img">
-                                        <a href="https://bid.cars/en/lot/0-37730147/2019-Volkswagen-Jetta-3VWCB7BU7KM198346" preload="no"><img class="carousel-item active" loading="lazy" src="https://mercury.bid.cars/0-37730147/2019-Volkswagen-Jetta-3VWCB7BU7KM198346-1.jpg" alt="3VWCB7BU7KM198346"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item-name">
-                                <a href="https://bid.cars/en/lot/0-37730147/2019-Volkswagen-Jetta-3VWCB7BU7KM198346" preload="no">2019 Volkswagen Jetta, S/Se/R-Line</a>
-                            </div>
-                        </div>
-                        
-                        <div class="bottom-wr">
-                            <div class="item-vin"><img src="https://bid.cars/img/upd/tabler_barcode.svg" width="20" height="20" alt="VIN code"><h2>
-                                    <a href="https://bid.cars/en/lot/0-37730147/2019-Volkswagen-Jetta-3VWCB7BU7KM198346" preload="no">3VWCB7BU7KM198346</a>
-                                </h2>
-                            </div>
-
-                            
-                            <div class="item-time auc-type-2">
-                                <img src="https://bid.cars/images/timer.svg" width="20" height="20" alt="Time left"> <span class="indicator"></span> Finished
-                            </div>
-
-                            <div class="price-box final"><div><span>Final bid</span>  
-															$6,050.00
 														</div></div>
 
                                                     </div>
@@ -2640,7 +2389,7 @@ Check if needed-->
                         
 					</div>
                     				                        
-                    					<div class="box item-box in-row" onclick="location.href='https://bid.cars/en/lot/1-57584833/2020-Volkswagen-Jetta-3VWC57BUXLM088402'">
+                    					<div class="box item-box in-row" onclick="location.href='https://bid.cars/en/lot/1-69266593/2019-Volkswagen-Jetta-3VWE57BU4KM065480'">
                         
                         <div class="top-wr">
                             <div class="gallery">
@@ -2653,18 +2402,18 @@ Check if needed-->
                                     -->
 
                                     <div class="carousel-inner" role="img">
-                                        <a href="https://bid.cars/en/lot/1-57584833/2020-Volkswagen-Jetta-3VWC57BUXLM088402" preload="no"><img class="carousel-item active" loading="lazy" src="https://mercury.bid.cars/1-57584833/2020-Volkswagen-Jetta-3VWC57BUXLM088402-1.jpg" alt="3VWC57BUXLM088402"></a>
+                                        <a href="https://bid.cars/en/lot/1-69266593/2019-Volkswagen-Jetta-3VWE57BU4KM065480" preload="no"><img class="carousel-item active" loading="lazy" src="https://mercury.bid.cars/1-69266593/2019-Volkswagen-Jetta-3VWE57BU4KM065480-1.jpg" alt="3VWE57BU4KM065480"></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="item-name">
-                                <a href="https://bid.cars/en/lot/1-57584833/2020-Volkswagen-Jetta-3VWC57BUXLM088402" preload="no">2020 Volkswagen Jetta, S</a>
+                                <a href="https://bid.cars/en/lot/1-69266593/2019-Volkswagen-Jetta-3VWE57BU4KM065480" preload="no">2019 Volkswagen Jetta, Sel</a>
                             </div>
                         </div>
                         
                         <div class="bottom-wr">
                             <div class="item-vin"><img src="https://bid.cars/img/upd/tabler_barcode.svg" width="20" height="20" alt="VIN code"><h2>
-                                    <a href="https://bid.cars/en/lot/1-57584833/2020-Volkswagen-Jetta-3VWC57BUXLM088402" preload="no">3VWC57BUXLM088402</a>
+                                    <a href="https://bid.cars/en/lot/1-69266593/2019-Volkswagen-Jetta-3VWE57BU4KM065480" preload="no">3VWE57BU4KM065480</a>
                                 </h2>
                             </div>
 
@@ -2674,7 +2423,48 @@ Check if needed-->
                             </div>
 
                             <div class="price-box final"><div><span>Final bid</span>  
-															$4,200.00
+															$6,200.00
+														</div></div>
+
+                                                    </div>
+                        
+					</div>
+                    				                        
+                    					<div class="box item-box in-row" onclick="location.href='https://bid.cars/en/lot/1-73165453/2018-Volkswagen-Jetta-3VWDB7AJ6JM230102'">
+                        
+                        <div class="top-wr">
+                            <div class="gallery">
+                                <div
+                                    id="carousel-car-6" class="carousel slide carousel-product" data-ride="carousel">
+                                    <!--
+                                                                <ol class="carousel-indicators">
+                                                                  <li data-target="#carousel-car-6" data-slide-to="0" class="active"></li>
+                                                                </ol>
+                                    -->
+
+                                    <div class="carousel-inner" role="img">
+                                        <a href="https://bid.cars/en/lot/1-73165453/2018-Volkswagen-Jetta-3VWDB7AJ6JM230102" preload="no"><img class="carousel-item active" loading="lazy" src="https://mercury.bid.cars/1-73165453/2018-Volkswagen-Jetta-3VWDB7AJ6JM230102-1.jpg" alt="3VWDB7AJ6JM230102"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-name">
+                                <a href="https://bid.cars/en/lot/1-73165453/2018-Volkswagen-Jetta-3VWDB7AJ6JM230102" preload="no">2018 Volkswagen Jetta, SE</a>
+                            </div>
+                        </div>
+                        
+                        <div class="bottom-wr">
+                            <div class="item-vin"><img src="https://bid.cars/img/upd/tabler_barcode.svg" width="20" height="20" alt="VIN code"><h2>
+                                    <a href="https://bid.cars/en/lot/1-73165453/2018-Volkswagen-Jetta-3VWDB7AJ6JM230102" preload="no">3VWDB7AJ6JM230102</a>
+                                </h2>
+                            </div>
+
+                            
+                            <div class="item-time auc-type-2">
+                                <img src="https://bid.cars/images/timer.svg" width="20" height="20" alt="Time left"> <span class="indicator"></span> Finished
+                            </div>
+
+                            <div class="price-box final"><div><span>Final bid</span>  
+															$3,800.00
 														</div></div>
 
                                                     </div>
@@ -2722,47 +2512,6 @@ Check if needed-->
                         
 					</div>
                     				                        
-                    					<div class="box item-box in-row" onclick="location.href='https://bid.cars/en/lot/1-51331393/2019-Volkswagen-Jetta-3VWC57BU6KM023805'">
-                        
-                        <div class="top-wr">
-                            <div class="gallery">
-                                <div
-                                    id="carousel-car-6" class="carousel slide carousel-product" data-ride="carousel">
-                                    <!--
-                                                                <ol class="carousel-indicators">
-                                                                  <li data-target="#carousel-car-6" data-slide-to="0" class="active"></li>
-                                                                </ol>
-                                    -->
-
-                                    <div class="carousel-inner" role="img">
-                                        <a href="https://bid.cars/en/lot/1-51331393/2019-Volkswagen-Jetta-3VWC57BU6KM023805" preload="no"><img class="carousel-item active" loading="lazy" src="https://mercury.bid.cars/1-51331393/2019-Volkswagen-Jetta-3VWC57BU6KM023805-1.jpg" alt="3VWC57BU6KM023805"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item-name">
-                                <a href="https://bid.cars/en/lot/1-51331393/2019-Volkswagen-Jetta-3VWC57BU6KM023805" preload="no">2019 Volkswagen Jetta, S</a>
-                            </div>
-                        </div>
-                        
-                        <div class="bottom-wr">
-                            <div class="item-vin"><img src="https://bid.cars/img/upd/tabler_barcode.svg" width="20" height="20" alt="VIN code"><h2>
-                                    <a href="https://bid.cars/en/lot/1-51331393/2019-Volkswagen-Jetta-3VWC57BU6KM023805" preload="no">3VWC57BU6KM023805</a>
-                                </h2>
-                            </div>
-
-                            
-                            <div class="item-time auc-type-2">
-                                <img src="https://bid.cars/images/timer.svg" width="20" height="20" alt="Time left"> <span class="indicator"></span> Finished
-                            </div>
-
-                            <div class="price-box final"><div><span>Final bid</span>  
-															$7,700.00
-														</div></div>
-
-                                                    </div>
-                        
-					</div>
-                    				                        
                     					<div class="box item-box in-row" onclick="location.href='https://bid.cars/en/lot/0-36554220/2019-Volkswagen-Jetta-3VWC57BU5KM048632'">
                         
                         <div class="top-wr">
@@ -2804,7 +2553,7 @@ Check if needed-->
                         
 					</div>
                     				                        
-                    					<div class="box item-box in-row" onclick="location.href='https://bid.cars/en/lot/1-69266593/2019-Volkswagen-Jetta-3VWE57BU4KM065480'">
+                    					<div class="box item-box in-row" onclick="location.href='https://bid.cars/en/lot/1-53471793/2019-Volkswagen-Jetta-3VWCB7BU7KM202508'">
                         
                         <div class="top-wr">
                             <div class="gallery">
@@ -2817,18 +2566,18 @@ Check if needed-->
                                     -->
 
                                     <div class="carousel-inner" role="img">
-                                        <a href="https://bid.cars/en/lot/1-69266593/2019-Volkswagen-Jetta-3VWE57BU4KM065480" preload="no"><img class="carousel-item active" loading="lazy" src="https://mercury.bid.cars/1-69266593/2019-Volkswagen-Jetta-3VWE57BU4KM065480-1.jpg" alt="3VWE57BU4KM065480"></a>
+                                        <a href="https://bid.cars/en/lot/1-53471793/2019-Volkswagen-Jetta-3VWCB7BU7KM202508" preload="no"><img class="carousel-item active" loading="lazy" src="https://mercury.bid.cars/1-53471793/2019-Volkswagen-Jetta-3VWCB7BU7KM202508-1.jpg" alt="3VWCB7BU7KM202508"></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="item-name">
-                                <a href="https://bid.cars/en/lot/1-69266593/2019-Volkswagen-Jetta-3VWE57BU4KM065480" preload="no">2019 Volkswagen Jetta, Sel</a>
+                                <a href="https://bid.cars/en/lot/1-53471793/2019-Volkswagen-Jetta-3VWCB7BU7KM202508" preload="no">2019 Volkswagen Jetta, S</a>
                             </div>
                         </div>
                         
                         <div class="bottom-wr">
                             <div class="item-vin"><img src="https://bid.cars/img/upd/tabler_barcode.svg" width="20" height="20" alt="VIN code"><h2>
-                                    <a href="https://bid.cars/en/lot/1-69266593/2019-Volkswagen-Jetta-3VWE57BU4KM065480" preload="no">3VWE57BU4KM065480</a>
+                                    <a href="https://bid.cars/en/lot/1-53471793/2019-Volkswagen-Jetta-3VWCB7BU7KM202508" preload="no">3VWCB7BU7KM202508</a>
                                 </h2>
                             </div>
 
@@ -2838,7 +2587,171 @@ Check if needed-->
                             </div>
 
                             <div class="price-box final"><div><span>Final bid</span>  
-															$6,200.00
+															$4,300.00
+														</div></div>
+
+                                                    </div>
+                        
+					</div>
+                    				                        
+                    					<div class="box item-box in-row" onclick="location.href='https://bid.cars/en/lot/1-57584833/2020-Volkswagen-Jetta-3VWC57BUXLM088402'">
+                        
+                        <div class="top-wr">
+                            <div class="gallery">
+                                <div
+                                    id="carousel-car-6" class="carousel slide carousel-product" data-ride="carousel">
+                                    <!--
+                                                                <ol class="carousel-indicators">
+                                                                  <li data-target="#carousel-car-6" data-slide-to="0" class="active"></li>
+                                                                </ol>
+                                    -->
+
+                                    <div class="carousel-inner" role="img">
+                                        <a href="https://bid.cars/en/lot/1-57584833/2020-Volkswagen-Jetta-3VWC57BUXLM088402" preload="no"><img class="carousel-item active" loading="lazy" src="https://mercury.bid.cars/1-57584833/2020-Volkswagen-Jetta-3VWC57BUXLM088402-1.jpg" alt="3VWC57BUXLM088402"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-name">
+                                <a href="https://bid.cars/en/lot/1-57584833/2020-Volkswagen-Jetta-3VWC57BUXLM088402" preload="no">2020 Volkswagen Jetta, S</a>
+                            </div>
+                        </div>
+                        
+                        <div class="bottom-wr">
+                            <div class="item-vin"><img src="https://bid.cars/img/upd/tabler_barcode.svg" width="20" height="20" alt="VIN code"><h2>
+                                    <a href="https://bid.cars/en/lot/1-57584833/2020-Volkswagen-Jetta-3VWC57BUXLM088402" preload="no">3VWC57BUXLM088402</a>
+                                </h2>
+                            </div>
+
+                            
+                            <div class="item-time auc-type-2">
+                                <img src="https://bid.cars/images/timer.svg" width="20" height="20" alt="Time left"> <span class="indicator"></span> Finished
+                            </div>
+
+                            <div class="price-box final"><div><span>Final bid</span>  
+															$4,200.00
+														</div></div>
+
+                                                    </div>
+                        
+					</div>
+                    				                        
+                    					<div class="box item-box in-row" onclick="location.href='https://bid.cars/en/lot/0-37396702/2019-Volkswagen-Jetta-3VWC57BUXKM093100'">
+                        
+                        <div class="top-wr">
+                            <div class="gallery">
+                                <div
+                                    id="carousel-car-6" class="carousel slide carousel-product" data-ride="carousel">
+                                    <!--
+                                                                <ol class="carousel-indicators">
+                                                                  <li data-target="#carousel-car-6" data-slide-to="0" class="active"></li>
+                                                                </ol>
+                                    -->
+
+                                    <div class="carousel-inner" role="img">
+                                        <a href="https://bid.cars/en/lot/0-37396702/2019-Volkswagen-Jetta-3VWC57BUXKM093100" preload="no"><img class="carousel-item active" loading="lazy" src="https://mercury.bid.cars/0-37396702/2019-Volkswagen-Jetta-3VWC57BUXKM093100-1.jpg" alt="3VWC57BUXKM093100"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-name">
+                                <a href="https://bid.cars/en/lot/0-37396702/2019-Volkswagen-Jetta-3VWC57BUXKM093100" preload="no">2019 Volkswagen Jetta, S/Se/R-Line</a>
+                            </div>
+                        </div>
+                        
+                        <div class="bottom-wr">
+                            <div class="item-vin"><img src="https://bid.cars/img/upd/tabler_barcode.svg" width="20" height="20" alt="VIN code"><h2>
+                                    <a href="https://bid.cars/en/lot/0-37396702/2019-Volkswagen-Jetta-3VWC57BUXKM093100" preload="no">3VWC57BUXKM093100</a>
+                                </h2>
+                            </div>
+
+                            
+                            <div class="item-time auc-type-2">
+                                <img src="https://bid.cars/images/timer.svg" width="20" height="20" alt="Time left"> <span class="indicator"></span> Finished
+                            </div>
+
+                            <div class="price-box final"><div><span>Final bid</span>  
+															$3,425.00
+														</div></div>
+
+                                                    </div>
+                        
+					</div>
+                    				                        
+                    					<div class="box item-box in-row" onclick="location.href='https://bid.cars/en/lot/1-51331393/2019-Volkswagen-Jetta-3VWC57BU6KM023805'">
+                        
+                        <div class="top-wr">
+                            <div class="gallery">
+                                <div
+                                    id="carousel-car-6" class="carousel slide carousel-product" data-ride="carousel">
+                                    <!--
+                                                                <ol class="carousel-indicators">
+                                                                  <li data-target="#carousel-car-6" data-slide-to="0" class="active"></li>
+                                                                </ol>
+                                    -->
+
+                                    <div class="carousel-inner" role="img">
+                                        <a href="https://bid.cars/en/lot/1-51331393/2019-Volkswagen-Jetta-3VWC57BU6KM023805" preload="no"><img class="carousel-item active" loading="lazy" src="https://mercury.bid.cars/1-51331393/2019-Volkswagen-Jetta-3VWC57BU6KM023805-1.jpg" alt="3VWC57BU6KM023805"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-name">
+                                <a href="https://bid.cars/en/lot/1-51331393/2019-Volkswagen-Jetta-3VWC57BU6KM023805" preload="no">2019 Volkswagen Jetta, S</a>
+                            </div>
+                        </div>
+                        
+                        <div class="bottom-wr">
+                            <div class="item-vin"><img src="https://bid.cars/img/upd/tabler_barcode.svg" width="20" height="20" alt="VIN code"><h2>
+                                    <a href="https://bid.cars/en/lot/1-51331393/2019-Volkswagen-Jetta-3VWC57BU6KM023805" preload="no">3VWC57BU6KM023805</a>
+                                </h2>
+                            </div>
+
+                            
+                            <div class="item-time auc-type-2">
+                                <img src="https://bid.cars/images/timer.svg" width="20" height="20" alt="Time left"> <span class="indicator"></span> Finished
+                            </div>
+
+                            <div class="price-box final"><div><span>Final bid</span>  
+															$7,700.00
+														</div></div>
+
+                                                    </div>
+                        
+					</div>
+                    				                        
+                    					<div class="box item-box in-row" onclick="location.href='https://bid.cars/en/lot/0-37730147/2019-Volkswagen-Jetta-3VWCB7BU7KM198346'">
+                        
+                        <div class="top-wr">
+                            <div class="gallery">
+                                <div
+                                    id="carousel-car-6" class="carousel slide carousel-product" data-ride="carousel">
+                                    <!--
+                                                                <ol class="carousel-indicators">
+                                                                  <li data-target="#carousel-car-6" data-slide-to="0" class="active"></li>
+                                                                </ol>
+                                    -->
+
+                                    <div class="carousel-inner" role="img">
+                                        <a href="https://bid.cars/en/lot/0-37730147/2019-Volkswagen-Jetta-3VWCB7BU7KM198346" preload="no"><img class="carousel-item active" loading="lazy" src="https://mercury.bid.cars/0-37730147/2019-Volkswagen-Jetta-3VWCB7BU7KM198346-1.jpg" alt="3VWCB7BU7KM198346"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-name">
+                                <a href="https://bid.cars/en/lot/0-37730147/2019-Volkswagen-Jetta-3VWCB7BU7KM198346" preload="no">2019 Volkswagen Jetta, S/Se/R-Line</a>
+                            </div>
+                        </div>
+                        
+                        <div class="bottom-wr">
+                            <div class="item-vin"><img src="https://bid.cars/img/upd/tabler_barcode.svg" width="20" height="20" alt="VIN code"><h2>
+                                    <a href="https://bid.cars/en/lot/0-37730147/2019-Volkswagen-Jetta-3VWCB7BU7KM198346" preload="no">3VWCB7BU7KM198346</a>
+                                </h2>
+                            </div>
+
+                            
+                            <div class="item-time auc-type-2">
+                                <img src="https://bid.cars/images/timer.svg" width="20" height="20" alt="Time left"> <span class="indicator"></span> Finished
+                            </div>
+
+                            <div class="price-box final"><div><span>Final bid</span>  
+															$6,050.00
 														</div></div>
 
                                                     </div>
@@ -3102,7 +3015,7 @@ Check if needed-->
                 <div class="item">
                     <img src="https://bid.cars/img/upd/google.png" width="77" height="26" alt="Google">
                     <div class="rating"><img src="https://bid.cars/img/upd/rating.png" width="100" height="20" alt="Stars"> 4,9</div>
-                    <a href="https://bid.cars/opinie/google" target="_blank" rel="nofollow">Based on 536 reviews</a>
+                    <a href="https://bid.cars/opinie/google" target="_blank" rel="nofollow">Based on 537 reviews</a>
                 </div>
                 
                 <div class="item">
@@ -3305,7 +3218,7 @@ Check if needed-->
 
     var is_static = '0';
 
-    var userLogged = 1;
+    var userLogged = 0;
 </script>
 
 <script type="text/javascript" src="https://bid.cars/js/new/external/jquery-3.7.1.min.js"></script>
@@ -3355,9 +3268,9 @@ var typeOfVehicle = 'Automobile';
 var bodyStyleNumber = 1;
 var isHeavy = '0';
 
-var UsdEurRate = 0.8478;
-var eurRate = 4.2355;
-var usdRate = 3.5912;
+var UsdEurRate = 0.8502;
+var eurRate = 4.2346;
+var usdRate = 3.6005;
 
 var liveAuctionStartDateTime = '';
 //var liveAuctionStartTime = '';
@@ -3811,4 +3724,4 @@ window.addEventListener("scroll", function() {
 
       </body>
 </html>
-<script type="text/javascript"> console.log("Time: 67.47") </script>
+<script type="text/javascript"> console.log("Time: 52.5") </script>
